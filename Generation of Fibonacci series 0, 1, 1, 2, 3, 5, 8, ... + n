@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    printf("Fibonacci series: ");
+
+    int first = 0, second = 1, next;
+    long long sum = 0;
+
+    for (int i = 0; i < n; i++) {
+        if (i <= 1) {
+            next = i;
+        } else {
+            next = first + second;
+            first = second;
+            second = next;
+        }
+
+        printf("%d", next);
+        sum += next;
+        if (i + 1 < n) {
+            printf(", ");
+        }
+    }
+
+    printf("\nSum of the Fibonacci series: %lld\n", sum);
+
+    return 0;
+}
