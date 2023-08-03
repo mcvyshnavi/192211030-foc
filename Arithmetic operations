@@ -1,0 +1,15 @@
+#include<stdio.h>
+ int main()
+ {
+ 	float a=17.8;
+ 	float b=2.5;
+ 	float c=a+b;
+ 	float d=a-b;
+ 	float e=a*b;
+ 	float f=a/b;
+ 	printf("the value of sum %f\n",c);
+ 	printf("the value of difference %f\n",d);
+ 	printf("the value of product %f\n",e);
+ 	printf("the value of quotient %f\n",f);
+ 	return 0;
+}
